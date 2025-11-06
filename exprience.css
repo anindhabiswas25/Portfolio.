@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ font-family: 'Poppins', sans-serif; /* Matched font-family from style.css */
+ box-sizing: border-box;
+    text-decoration: none; /* Added from style.css */
+ border: none; /* Added from style.css */
+outline: none; /* Added from style.css */
+}
+
+html{
+font-size: 62.5%; /* Added from style.css for rem units */
+}
+
+body{
+ background-color: black;
+    color: white; /* Added from style.css */
+    overflow-x: hidden; /* Added from style.css */
+}
+
+/* === START: Styles copied from style.css === */
+header{
+ margin-top: 20px;
+position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding: 1rem 9%;
+ background-color: transparent;
+ filter: drop-shadow(10px);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 100;
+}
+
+.logo{
+ font-size: 3rem;
+ color: red;
+ font-weight: 800;
+ cursor: pointer;
+ transition: 0.5s ease;
+}
+
+.logo:hover{
+ transform: scale(1.1);
+}
+
+nav a{
+ font-size: 1.8rem;
+ color: white;
+ margin-left: 4rem;
+ font-weight: 500;
+ transition: 0.3s ease;
+ border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+ color: red;
+border-bottom: 3px solid red;
+}
+
+@media(max-width:995px){
+ nav{
+ position: absolute;
+ display: none;
+ top: 0;
+ right: 0;
+ width: 40%;
+ border-left: 3px solid red;
+ border-bottom: 3px solid red;
+ border-bottom-left-radius: 2rem;
+ padding: 1rem solid;
+ background-color: #161616;
+ border-top: 0.1rem solid rgba(0,0,0) }
+
+ nav.active{
+ display: block;
+ }
+
+ nav a{
+ display: block; font-size: 2rem;
+ margin: 3rem 0;
+ }
+
+ nav a:hover,
+ nav a.active{
+ padding: 1rem;
+ border-radius: 0.5rem;
+ border-bottom: 0.5rem solid red;
+ }
+}
+/* === END: Styles copied from style.css === */
+
+
+/* --- Original education.css styles (untouched) --- */
+.heading{
+display: flex;
+justify-content: center;
+padding-top: 7%; /* You might need to adjust this padding-top to account for the fixed header */
+font-weight: 700;
+font-size: 50px;
+gap: 12px;
+}
+
+.my{ color: red;
+}
+.exprience{
+ color: white}
+
+
+
+.boxs {
+   display: flex;
+   justify-content: space-between;
+} 
+
+
+.box {
+   display: flex;
+   flex-direction: column;
+   gap: 20px; 
+   
+   flex: 1;
+   border: px solid red;
+   border-radius: 40px;
+   padding: 30px;
+   margin: 30px;
+   height: 65vh; 
+   box-shadow: 0 0 20px red;
+  
+
+   
+   
+   overflow: hidden; 
+} 
+
+.hack,.workshop{
+   text-align: center;
+   font-size: 20px;
+   margin: 13px;
+   font-weight: 600;
+   color: red;
+   
+
+
+}
+.descrip{
+   text-align: center;
+   font-size:13px ;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+
+/* --- UPDATED: The image gallery container --- */
+.image-container {
+    display: flex; /* Make it a flex container */
+    flex-wrap: nowrap; /* IMPORTANT: Prevents images from wrapping to a new line */
+    gap: 20px;      /* Space between images */
+
+    /* Enable horizontal scrolling */
+    overflow-x: auto; 
+    
+    /* Make it fill the remaining vertical space inside .box */
+    flex: 1; 
+
+    /* Hide the scrollbar but keep scrolling functionality */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;    /* Firefox */
+}
+
+
+.image-container::-webkit-scrollbar {
+    display: none;
+}
+
+.image-container img {
+    /* Prevent images from shrinking below their intrinsic size */
+    flex-shrink: 0; 
+
+    /* Each image will be a fixed width */
+    width: 350px; /* Adjust this width as desired */
+    
+    /* Set a fixed height */
+    height: 255px; /* Adjust this height as desired */
+
+    /* Ensure images fill their dimensions without distortion */
+    object-fit: cover; 
+    
+    border-radius: 15px; /* Keep rounded corners */
+}

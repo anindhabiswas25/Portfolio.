@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ font-family: 'Poppins', sans-serif; /* Matched font-family from style.css */
+ box-sizing: border-box;
+    text-decoration: none; /* Added from style.css */
+ border: none; /* Added from style.css */
+outline: none; /* Added from style.css */
+}
+
+html{
+font-size: 62.5%; /* Added from style.css for rem units */
+}
+
+body{
+ background-color: black;
+    color: white; /* Added from style.css */
+    overflow-x: hidden; /* Added from style.css */
+}
+
+/* === START: Styles copied from style.css === */
+header{
+ margin-top: 20px;
+position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding: 1rem 9%;
+ background-color: transparent;
+ filter: drop-shadow(10px);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 100;
+}
+
+.logo{
+ font-size: 3rem;
+ color: red;
+ font-weight: 800;
+ cursor: pointer;
+ transition: 0.5s ease;
+}
+
+.logo:hover{
+ transform: scale(1.1);
+}
+
+nav a{
+ font-size: 1.8rem;
+ color: white;
+ margin-left: 4rem;
+ font-weight: 500;
+ transition: 0.3s ease;
+ border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+ color: red;
+border-bottom: 3px solid red;
+}
+
+@media(max-width:995px){
+ nav{
+ position: absolute;
+ display: none;
+ top: 0;
+ right: 0;
+ width: 40%;
+ border-left: 3px solid red;
+ border-bottom: 3px solid red;
+ border-bottom-left-radius: 2rem;
+ padding: 1rem solid;
+ background-color: #161616;
+ border-top: 0.1rem solid rgba(0,0,0) }
+
+ nav.active{
+ display: block;
+ }
+
+ nav a{
+ display: block; font-size: 2rem;
+ margin: 3rem 0;
+ }
+
+ nav a:hover,
+ nav a.active{
+ padding: 1rem;
+ border-radius: 0.5rem;
+ border-bottom: 0.5rem solid red;
+ }
+}
+/* === END: Styles copied from style.css === */
+
+
+/* --- Original education.css styles (untouched) --- */
+.heading{
+display: flex;
+justify-content: center;
+padding-top: 7%; /* You might need to adjust this padding-top to account for the fixed header */
+font-weight: 700;
+font-size: 50px;
+gap: 12px;
+}
+
+.my{ color: red;
+}
+.education{
+ color: white}
+
+.box{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding-top: 40px;
+
+}
+.educationdetails{
+    border: 5 solid red;
+    width: 80vw;
+  height: 50vh;
+   border-radius: 40px ;
+    padding: 150px ;
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+  box-shadow: 0 0 20px red;
+ 
+  justify-content: center;
+margin: auto;
+}
+.data{
+   color: red;
+   font-size: 2.5rem;
+   font-weight: 700;
+}
+
+.details{
+ font-size: 2.5rem;
+
+}

@@ -3,24 +3,23 @@
 *{
  margin: 0;
  padding: 0;
- font-family: 'Poppins', sans-serif; /* Matched font-family from style.css */
+ font-family: 'Poppins', sans-serif; 
  box-sizing: border-box;
-    text-decoration: none; /* Added from style.css */
- border: none; /* Added from style.css */
-outline: none; /* Added from style.css */
+    text-decoration: none;
+ border: none; 
+outline: none; 
 }
 
 html{
-font-size: 62.5%; /* Added from style.css for rem units */
+font-size: 62.5%; 
 }
 
 body{
  background-color: black;
-    color: white; /* Added from style.css */
-    overflow-x: hidden; /* Added from style.css */
+    color: white; 
+    overflow-x: hidden; 
 }
 
-/* === START: Styles copied from style.css === */
 header{
  margin-top: 20px;
 position: fixed;
@@ -93,14 +92,11 @@ border-bottom: 3px solid red;
  border-bottom: 0.5rem solid red;
  }
 }
-/* === END: Styles copied from style.css === */
 
-
-/* --- Original education.css styles (untouched) --- */
 .heading{
 display: flex;
 justify-content: center;
-padding-top: 7%; /* You might need to adjust this padding-top to account for the fixed header */
+padding-top: 7%; 
 font-weight: 700;
 font-size: 50px;
 gap: 12px;

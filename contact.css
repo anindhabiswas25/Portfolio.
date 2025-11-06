@@ -3,24 +3,23 @@
 *{
  margin: 0;
  padding: 0;
- font-family: 'Poppins', sans-serif; /* Matched font-family from style.css */
- box-sizing: border-box;
-    text-decoration: none; /* Added from style.css */
- border: none; /* Added from style.css */
-outline: none; /* Added from style.css */
+ font-family: 'Poppins', sans-serif; 
+ box-sizing : border-box;
+    text-decoration: none; 
+ border: none; 
+outline: none; 
 }
 
 html{
-font-size: 62.5%; /* Added from style.css for rem units */
+font-size: 62.5%; 
 }
 
 body{
  background-color: black;
-    color: white; /* Added from style.css */
-    overflow-x: hidden; /* Added from style.css */
+    color: white; 
+    overflow-x: hidden; 
 }
 
-/* === START: Styles copied from style.css === */
 header{
  margin-top: 20px;
 position: fixed;
@@ -94,23 +93,14 @@ border-bottom: 3px solid red;
  }
 }
 
-/* ... (all your existing CSS from * to header is fine) ... */
 
-/* === UPDATED: Main Content Container === */
 .main-content {
-    /*
-      1. min-height: 100vh; makes the container fill the full screen height.
-      2. align-items: center; vertically centers the content (your .div1).
-      3. padding: ...; adds 10rem padding on top (to avoid the fixed header)
-         and 9% on the sides (to match your header's alignment).
-    */
-    display: flex;
-    justify-content: center; /* Horizontally centers the content */
-    align-items: center;     /* Vertically centers the content */
-    min-height: 100vh;
-    padding: 10rem 9% 2rem 9%; /* Top, Side, Bottom */
 
-    /* We removed the old padding-top, margin, and border */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;
+    padding: 10rem 9% 2rem 9%;
 }
 
 .contact-details {
@@ -119,20 +109,20 @@ border-bottom: 3px solid red;
 }
 
 i {
-    /* Changed from px to rem for consistency */
+    
     font-size: 2.4rem; 
     color: red;
 }
 
 .box-icon {
     background-color: white;
-    /* Changed to a single padding value for a perfect circle */
+    
     padding: 1.5rem; 
-    margin: 0; /* Removed old margin */
+    margin: 0; 
     border: .1px solid #16191e;
     border-radius: 50%;
     
-    /* Added display:flex to center the icon inside */
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,12 +133,12 @@ i {
 }
 
 .description {
-    /* Changed padding to 0, the 'gap' in .div1 now handles spacing */
+
     padding: 0;
-    /* Added styles to make description centered and readable */
+  
     font-size: 1.6rem;
     text-align: center;
-    max-width: 60rem; /* Prevents text from being too wide */
+    max-width: 60rem;
 }
 
 .heading {
@@ -158,29 +148,26 @@ i {
     text-align: center;
 }
 
-/* === UPDATED: Content Wrapper === */
+
 .div1 {
     display: flex;
     flex-direction: column;
-    /* 1. Increased gap for better spacing */
     gap: 3rem; 
-    /* 2. align-items: center; centers all the content blocks */
+   
     align-items: center;
     
-    max-width: 80rem; /* Stops content from getting too wide */
+    max-width: 80rem; 
 }
 
-/* === NEW: Style for the text next to the icon === */
-/* This class is already in your HTML, we just need to style it */
 .detail {
     font-size: 1.6rem;
     margin-left: 1.5rem;
 }
-/* --- ADD THIS NEW RULE --- */
+
 .contact-info-list {
   display: flex;
   flex-direction: column;
-  gap: 3rem; /* This creates the space between your contact items */
-  width: 100%; /* Makes the list use the available width */
-  max-width: 60rem; /* Adjust this to match your description width */
+  gap: 3rem; 
+  width: 100%; 
+  max-width: 60rem; 
 }
